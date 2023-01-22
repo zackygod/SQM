@@ -3,28 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
     <title>Porfolio</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="headerInner">
-          <img src="img/logo.png" alt="logo" />
+          <img class="logo" src="img/logo.svg" alt="logo" />
           <nav>
-            <ul>
-              <li><a href="#front">Front-end skills </a></li>
-              <li><a href="#back">Back-end skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact </a></li>
+            <ul class="menu">
+              <li class="menu_item"><a class="scroll" href="#front">Front-end skills </a></li>
+              <li class="menu_item"><a class="scroll" href="#back">Back-end skills</a></li>
+              <li class="menu_item"><a class="scroll" href="#portfolio">Portfolio</a></li>
+              <li class="menu_item"><a class="scroll" href="#contact">Contact </a></li>
             </ul>
+            <ul class="menu-small">
+              <li class="menu_small_item"><a>Front-end skills </a></li>
+              <li class="menu_small_item"><a>Back-end skills</a></li>
+              <li class="menu_small_item"><a>Portfolio</a></li>
+              <li class="menu_small_item"><a>Contact </a></li>
+            </ul>
+            <div class="menu_small_icon">
+              <div class="stick"></div>
+              <div class="stick"></div>
+              <div class="stick"></div>
+            </div>
           </nav>
         </div>
+      </div>
       </div>
     </header>
     <main>
@@ -34,20 +54,9 @@
         <div class="info-main">
           <h1>Speed | quality | modernity is our slogan.</h1>
           <p>
-            We do turnkey websites - that means you get a full range of website development services. All you need to do is write us a brief terms of reference. This will allow you to save time and spend it usefully, while you are guaranteed to get a result - a finished site that fully meets your objectives.
+            We do turnkey websites - that means you get a complete website development service. All you need to do is write us a brief terms of reference. This will allow you to save time and spend it usefully, while you are guaranteed to get the result - a finished website that fully meets your objectives
 
-            The procedure to order a turnkey website is as follows:
-           
-           Contact between the customer and the client;
-           issuing terms of reference;
-           The creation of an original design;
-           layout;
-           the choice of hosting;
-           software part;
-           optimization and filling with content;
-           promotion in search engines, if specified in the contract.
-           
-           The quality of the website depends on the accuracy of the tasks that the customer will set before the contractor. Therefore, due consideration should be given to the development of the terms of reference
+            The quality of the site depends on the accuracy of the tasks that you put before us. Therefore, you should pay attention to the development of terms of reference!
            
         
           </p>
@@ -61,6 +70,7 @@
       <div class="front">
         <h1>Front-end skills</h1>
       </div>
+      
       <div class="score-front">
         <h1 class="zag-front">Coding Skills</h1>
       <img src="img/HTML.svg" id="HTML">
@@ -75,19 +85,31 @@
       <div class="block">
       <img class="icon" src="img/pen.png" id="img">
       <h1>UI / UX Design</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      <p> <b>UX design</b> - our role is to make your product user-friendly and accessible. We get to know your target audience, identify the problems that need to be solved and come up with solutions to those problems.
+      </p>
+      <p>
+      <b>UI design</b> - our job is to design all the screens that the user will navigate through, and to create visual elements and their interactive properties that facilitate this movement.
     </p>
     </div>
     <div class="block">
-        <img class="icon" src="/img/computer.png" id="img">
+        <img class="icon" src="img/computer.png" id="img">
         <h1>HTML, CSS, JavaScript</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <p><b>With HTML</b> we create the structure of the website and with CSS we create the design and adaptive layout of the website
+        </p>
+        <p>
+        <b>We use JavaScript</b> in web development to add interactivity and features to improve the user experience and make websites much more user-friendly.
         </p>
       </div>
       <div class="block">
         <img class="icon" src="img/shop.png" id="img">
-        <h1>Sass,  Green Sock, React</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <h1>Sass,  GreenSock, React</h1>
+        <p><b>Why do we use Sass?</b> It allows us to use features that CSS doesn't, such as variables, nested rules, mixins, imports, inheritance, built-in functions and more.
+        </p>
+        <p>
+          <b>Greensock</b> allows us to animate just about anything that can be accessed with JavaScript, shared objects, canvases and more.
+        </p>
+        <p>
+        <b>With React</b>, we design and build JavaScript-based applications for web or mobile environments. 
         </p>
       </div>
     </div>
@@ -97,8 +119,9 @@
         <div class="front">
             <h1>Back-end skills</h1>
         </div>
-        <div class="score-back">
-            <h1 class="zag-front">Coding Skills</h1>
+        
+        <div class="score-back">  
+          <h1 class="zag-front">Coding Skills</h1> 
           <img src="img/PHP.svg" id="PHP">
           <img src="img/MySQL.svg" id="MySQL">
       </div>
@@ -107,13 +130,14 @@
       <div class="block">
       <img class="icon" src="img/pen.png" id="img">
       <h1>PHP</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      <p>
+        <b>PHP is responsible</b> for writing server-side logic for web applications. PHP is usually used to develop internal components, connect applications to other (often third-party) web services and support front-end development.
     </p>
     </div>
     <div class="block">
         <img class="icon" src="img/computer.png" id="img">
         <h1>Database</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <p><b>We are responsible</b> for the creation and implementation of computer databases. We determine the best database management system for a particular client, and test database software for efficiency and performance, troubleshooting and correcting problems.
         </p>
       </div>
     </div>
@@ -130,52 +154,57 @@
             <p>SQM</p>
         </div>
         <h1 class="zag-small">Galerie</h1>
-        <div class="galeria">
-            <img src="img/portfolio.png" id="img">
-            <img src="img/portfolio.png" id="img">
-            <img src="img/portfolio.png" id="img">
-        </div>
+          <div class="slider">
+            <div><img src="img/img_3.png"></div>
+            <div><img src="img/img_3.png"></div>
+            <div><img src="img/img_3.png"></div>
+            <div><img src="img/img_3.png"></div>
+          </div>
     </section>
     <section id="contact">
         <div class="front">
             <h1>Contact</h1>
         </div>
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1538a199bfaca08dc3e6c234a375cb8e19cdd6a4d0e0ff7c8f978da241dd449e&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        
+      
         <div class="info-contact">
             <div class="block">
             <img class="icon" src="img/phone.png" id="img">
             <h1>8 919 871 05 62</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            <p>
+              A working telephone number for you to make a business call with us.
           </p>
           </div>
           <div class="block">
               <img class="icon" src="img/location.png" id="img">
               <h1>Rostov-on-Don</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              <p>
+                Our company is headquartered here, so if you are interested in a business meeting we can arrange it from 10:00 to 22:00 from Monday to Friday.
               </p>
             </div>
             <div class="block">
               <img class="icon" src="img/letter.png" id="img">
               <h1>r.konovalov22@gmail.com</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              <p>
+                Our company email, where you can contact for more information and arrange a personal meeting or a business call.
               </p>
             </div>
           </div>
           <div class="form-contact">
-            <h1 class="zag-contact">Clients?</h1>
-            <form action="">
-                <div class="form">
-                    <input class="form-text" type="text" name="name" id="name" placeholder="Text" required>
-                </div>
+            
+            <form class="form">
+              <h1 class="zag-contact">Contact us</h1>
                 <div class="form">
                     <input type="text" name="name" id="name" placeholder="Name and surname" required>
-                </div>
-                <div class="form">
+                
                     <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
-
+                <div class="form">
+                  <textarea class="form-text" name="msg" placeholder="Message" required></textarea>
+              </div>
                 
-                <button type="button" class="btn-contact">Send </button>
+                <button  type="submit" value="SEND" class="btn-contact">Send message</button>
             </form>
         </div>   
     </section>
@@ -192,15 +221,9 @@
             <p>VK</p> 
             <p>Instagram</p>
             <p>Youtube</p> 
-           </div>
-            
-            
-        
-        
-        
-        
+           </div>   
     </section>
   </footer>
   <script src="script.js"></script>
-  
+  <script src="anime.min.js"></script>
 </html>
